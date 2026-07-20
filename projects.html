@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جميع المشاريع | غسان عبد الخالق</title>
+    <meta name="description" content="جميع مشاريع المطور غسان عبد الخالق في مكان واحد.">
+    <meta name="author" content="Ghassan Abdulkhaliq">
+
+    <!-- خطوط جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- مكتبة AOS للانيميشن -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS المخصص -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- جسيمات الخلفية -->
+    <div id="particles-js"></div>
+    
+    <!-- شريط التحميل -->
+    <div class="loader">
+        <div class="spinner"></div>
+        <p>جاري التحميل...</p>
+    </div>
+    
+    <!-- القائمة الجانبية للهاتف -->
+    <div class="mobile-menu">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html#home">الرئيسية</a></li>
+            <li><a href="index.html#about">نبذة عني</a></li>
+            <li><a href="index.html#skills">المهارات</a></li>
+            <li><a href="#">المشاريع</a></li>
+            <li><a href="index.html#contact">تواصل معي</a></li>
+        </ul>
+    </div>
+    
+    <!-- القائمة العلوية -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html#home">Ghassan</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html#home">الرئيسية</a></li>
+                <li><a href="index.html#about">نبذة عني</a></li>
+                <li><a href="index.html#skills">المهارات</a></li>
+                <li><a href="#">المشاريع</a></li>
+                <li><a href="index.html#contact">تواصل معي</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            ☰
+        </div>
+    </header>
+    
+    <!-- قسم المشاريع -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-left">أعمالي <span>و مشاريع</span></h2>
+    
+    <!-- أزرار الفلترة -->
+    <div class="projects-filter" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">الكل</button>
+      <button class="filter-btn" data-filter="web">تطوير الويب</button>
+      <button class="filter-btn" data-filter="app">تطبيقات</button>
+      <button class="filter-btn" data-filter="design">تصميم</button>
+      <button class="filter-btn" data-filter="featured">المفضلات</button>
+      <button class="filter-btn" data-filter="highlighted">المميزات</button>
+    </div>
+        <div class="projects-content">
+
+
+            <!-- مشروع 1: التطبيق - الآلة الحاسبة الناطقة -->
+            <div class="project-item" data-category="app" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-img">
+                    <img src="assets/projects/calcvoice.webp" alt="صورة تطبيق الآلة الحاسبة الناطقة">
+                    <div class="project-links">
+                        <a href="https://ghassanabdulkhaliq92-commits.github.io/portfolio/" target="_blank" rel="noopener" class="project-link">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض المشروع</span>
+                        </a>
+                        <a href="https://apkpure.com/p/com.gak.calcvoice" target="_blank" class="project-link">
+                            <i class="fab fa-google-play"></i>
+                            <span>رابط APKPure</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>الآلة الحاسبة الناطقة | Calc Voice</h3>
+                    <p>
+                        تطبيق آلة حاسبة ناطقة يدعم النطق بالعربية والإنجليزية مع دعم الوضع الداكن، تم تطويره باستخدام Kotlin وJetpack Compose.
+                    </p>
+                    <div class="project-tech">
+                        <span>Kotlin</span>
+                        <span>Jetpack Compose</span>
+                        <span>Android</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+            <!-- مشروع 2 -->
+            <div class="project-item" data-category="web" data-aos="fade-up">
+                <div class="project-img">
+                    <img src="assets/images/project1.jpg" alt="صورة لمشروع موقع تجارة إلكترونية">
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener" class="project-link">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض المشروع</span>
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>الكود المصدري</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>موقع تجارة إلكترونية</h3>
+                    <p>
+                        موقع متكامل للتجارة الإلكترونية مع نظام دفع وسلة تسوق. تم بناؤه باستخدام React وNode.js.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- مشروع 3 -->
+            <div class="project-item" data-category="app" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-img">
+                    <img src="assets/images/project2.jpg" alt="صورة لمشروع نظام إدارة المهام">
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض المشروع</span>
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>الكود المصدري</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>نظام إدارة المهام</h3>
+                    <p>
+                        تطبيق ويب لإدارة المهام اليومية مع إمكانية تحديد الأولويات وتذكير بالمواعيد.
+                    </p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- مشروع 4 -->
+            <div class="project-item" data-category="design" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-img">
+                    <img src="assets/images/project3.jpg" alt="صورة لمشروع موقع شخصي لكاتب">
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض المشروع</span>
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>الكود المصدري</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>موقع شخصي لكاتب</h3>
+                    <p>
+                        موقع شخصي لكاتب مع نظام مدونة متكامل وإدارة المحتوى.
+                    </p>
+                    <div class="project-tech">
+                        <span>WordPress</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+</section>
+    
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>عسان عبد الخالق</h3>
+                    <p>مطور ويب ةتطبيقات محترف</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html#home">الرئيسية</a></li>
+                        <li><a href="index.html#about">نبذة عني</a></li>
+                        <li><a href="index.html#skills">المهارات</a></li>
+            <li><a href="projects.html">المشاريع</a></li>
+        </ul>
+    </div
+                <div class="footer-contact">
+                    <h4>معلومات التواصل</h4>
+                    <p><i class="fas fa-envelope"></i> example@email.com</p>
+                    <p><i class="fas fa-phone"></i> +966 50 123 4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> جميع الحقوق محفوظة | تم التصميم والتطوير بواسطة <span>غسان عبد الخالق</span></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- زر العودة للأعلى -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- مكتبة particles.js -->
+    <script src="js/particles.min.js"></script>
+    <!-- مكتبة AOS للانيميشن -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JS المخصص -->
+    <script src="js/main.js"></script>
+</body>
+</html>

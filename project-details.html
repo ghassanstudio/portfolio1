@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الآلة الحاسبة الناطقة | Calc Voice | غسان عبدالخالق</title>
+    <meta name="description" content="تطبيق آلة حاسبة ناطقة يدعم نطق الأرقام، العمليات الحسابية، ونطق ناتج العملية. يدعم الوضع الداكن وتبديل صوت اللغة بين العربية والإنجليزية. تم تطوير التطبيق باستخدام Kotlin وJetpack Compose.">
+    <meta name="author" content="غسان عبدالخالق">
+    <meta name="keywords" content="آلة حاسبة، حاسبة ناطقة، تطبيق أندرويد، كوتلين، Jetpack Compose، تطبيقات تعليمية">
+    <link rel="canonical" href="https://apkpure.com/p/com.gak.calcvoice">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="الآلة الحاسبة الناطقة | Calc Voice">
+    <meta property="og:description" content="تطبيق آلة حاسبة ناطقة يدعم نطق الأرقام، العمليات الحسابية، ونطق ناتج العملية.">
+    <meta property="og:image" content="assets/images/calcvoice.webp">
+    <meta property="og:url" content="https://apkpure.com/p/com.gak.calcvoice">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="الآلة الحاسبة الناطقة | Calc Voice">
+    <meta name="twitter:description" content="تطبيق آلة حاسبة ناطقة يدعم نطق الأرقام، العمليات الحسابية، ونطق ناتج العملية.">
+    <meta name="twitter:image" content="assets/images/calcvoice.webp">
+    <!-- خطوط جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- مكتبة AOS للانيميشن -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS المخصص -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- تحسينات المشروع -->
+    <link rel="stylesheet" href="css/project-enhancements.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- شريط التحميل -->
+    <div class="loader">
+        <div class="spinner"></div>
+        <p>جاري التحميل...</p>
+    </div>
+
+     
+    <!-- القائمة الجانبية للهاتف -->
+    <div class="mobile-menu">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="https://ghassanabdulkhaliq92-commits.github.io/portfolio/">الرئيسية</a></li>
+            <li><a href="#about">نبذة عني</a></li>
+            <li><a href="#skills">المهارات</a></li>
+            <li><a href="#projects">المشاريع</a></li>
+            <li><a href="#contact">تواصل معي</a></li>
+        </ul>
+    </div>
+    
+    <!-- القائمة العلوية -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">غسان</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="https://ghassanabdulkhaliq92-commits.github.io/portfolio/">الرئيسية</a></li>
+                <li><a href="#overview">نظرة عامة</a></li>
+                <li><a href="#features">المميزات</a></li>
+                <li><a href="#technologies">التقنيات</a></li>
+                <li><a href="#gallery">معرض الصور</a></li>
+                <li><a href="#video">فيديو التطبيق</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            ☰
+        </div>
+    </header>
+    
+    <!-- القسم الرئيسي -->
+    <section id="overview" class="hero">
+        <div class="hero-content">
+
+
+            
+            <h1 data-aos="fade-left" data-aos-delay="100">الآلة الحاسبة الناطقة | Calc Voice</h1>
+            <h3 class="typing-text" data-aos="fade-left" data-aos-delay="200">
+                <span class="typing-cursor">|</span>
+            </h3>
+            <p data-aos="fade-left" data-aos-delay="300">
+                تطبيق نطق الأرقام والعمليات الحسابية عند النقر عليها، وينطق أيضًا ناتج العملية الحسابية بعد الحساب. يدعم التطبيق الوضع الداكن وتبديل صوت اللغة بين العربية والإنجليزية.  
+                تم تطوير التطبيق باستخدام Kotlin، Jetpack Compose وKotlin DSL في Android Studio.
+            </p>
+                
+            <div class="hero-buttons" data-aos="fade-left" data-aos-delay="400">
+                <a href="https://apkpure.com/p/com.gak.calcvoice" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i>
+                    تحميل التطبيق
+                </a>
+                <a href="#gallery" class="btn btn-secondary">
+                    <i class="fas fa-images"></i>
+                    معرض الصور
+                </a>
+                <a href="#video" class="btn btn-secondary">
+                    <i class="fas fa-play-circle"></i>
+                    فيديو التطبيق
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+            <p>مرر للأسفل</p>
+        </div>
+    </section>
+    
+    <!-- قسم نظرة عامة مفصل -->
+    <section id="overview-details" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-left">نظرة <span>عامة</span></h2>
+            <div class="about-content">
+                <div class="about-img" data-aos="fade-right">
+                    <div class="img-container">
+                        <img src="assets/images/calcvoice.webp" alt="صورة من التطبيق">
+                        <div class="img-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-calculator"></i>
+                                <p>الآلة الحاسبة الناطقة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>حول التطبيق</h3>
+                    <p>
+                        تطبيق آلة حاسبة ناطقة يقوم بنطق الأرقام، العمليات الحسابية، وناتج العملية الحسابية فوراً عند النقر. يدعم التطبيق الوضع الداكن الذي يتغير تلقائياً حسب إعدادات الجهاز، ويحتوي على لغتين للصوت (العربية والإنجليزية) يمكن التبديل بينهما تلقائياً أو يدوياً عبر زر مخصص.
+                        يحتوي التطبيق على إعلانات ستار آب ويتميز بتصميم بسيط وسهل الاستخدام مناسب لجميع المستخدمين.
+                    </p>
+                        
+                    <div class="info">
+                        <div class="info-item">
+                            <span>المطور:</span>
+                            <p>غسان عبدالخالق</p>
+                        </div>
+                        <div class="info-item">
+                            <span>التاريخ:</span>
+                            <p>2025</p>
+                        </div>
+                        <div class="info-item">
+                            <span>النوع:</span>
+                            <p>تطبيق أندرويد</p>
+                        </div>
+                        <div class="info-item">
+                            <span>الحالة:</span>
+                            <p>مفعل ومتواجد على الإنترنت</p>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>Kotlin</h4>
+                            <p>لغة البرمجة المستخدمة</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Jetpack Compose</h4>
+                            <p>لتصميم الواجهة</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Kotlin DSL</h4>
+                            <p>لتنسيق الكود</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم المميزات -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-left">مميزات <span>التطبيق</span></h2>
+            <div class="section-subtitle" data-aos="fade-left" data-aos-delay="100">اكتشف الميزات الفريدة التي تجعل تطبيقنا استثنائياً</div>
+            <div class="features-intro" data-aos="fade-up" data-aos-delay="200">
+                <p>تم تصميم تطبيق الآلة الحاسبة الناطقة لتوفير تجربة استخدام فريدة وممتعة، مع التركيز على سهولة الاستخدام والوصولية لجميع الفئات.</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- ميزة 1 -->
+                <div class="feature-item" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>نطق الأرقام والعمليات وناتج الحساب</h3>
+                    <p>عند النقر على أي رقم أو عملية حسابية، يتم نطقها صوتياً، وكذلك يتم نطق ناتج العملية الحسابية بعد التنفيذ.</p>
+                    <div class="feature-details">
+                        <span class="feature-tag">تقنية Text-to-Speech</span>
+                        <span class="feature-tag">دعم فوري</span>
+                    </div>
+                </div>
+                
+                <!-- ميزة 2 -->
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-adjust"></i>
+                    </div>
+                    <h3>الوضع الداكن التلقائي</h3>
+                    <p>يتغير تصميم التطبيق تلقائياً مع تغيير إعدادات الوضع الداكن في الجهاز لراحة المستخدم.</p>
+                    <div class="feature-details">
+                        <span class="feature-tag">رؤية مريحة</span>
+                        <span class="feature-tag">توفير الطاقة</span>
+                    </div>
+                </div>
+                
+                <!-- ميزة 3 -->
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>دعم لغتين صوتيتين</h3>
+                    <p>التبديل بين الصوت العربي والإنجليزي تلقائياً حسب إعدادات الجهاز، مع زر لتغيير اللغة يدوياً.</p>
+                    <div class="feature-details">
+                        <span class="feature-tag">عربي</span>
+                        <span class="feature-tag">إنجليزي</span>
+                        <span class="feature-tag">تبديل سريع</span>
+                    </div>
+                </div>
+                
+                <!-- ميزة 4 -->
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3>إعلانات StartApp</h3>
+                    <p>يحتوي التطبيق على إعلانات StartApp لدعم التطوير المستمر.</p>
+                    <div class="feature-details">
+                        <span class="feature-tag">إعلانات غير مزعجة</span>
+                        <span class="feature-tag">دعم التطوير</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم التقنيات -->
+    <section id="technologies" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-left">التقنيات <span>المستخدمة</span></h2>
+            <div class="section-subtitle" data-aos="fade-left" data-aos-delay="100">تعرف على التقنيات الحديثة التي تم استخدامها في تطوير التطبيق</div>
+            
+            <div class="tech-content">
+                <div class="tech-text" data-aos="fade-right">
+                    <h3>كيف تم بناء التطبيق؟</h3>
+                    <p>
+                        تم تطوير التطبيق باستخدام أحدث التقنيات والأدوات في عالم تطوير تطبيقات الأندرويد، مع التركيز على الأداء العالي وتجربة المستخدم السلسة.
+                    </p>
+                    
+                    <div class="tech-categories">
+                        <div class="category">
+                            <h4><i class="fas fa-code"></i> البرمجة</h4>
+                            <p>Kotlin, Kotlin DSL</p>
+                        </div>
+                        <div class="category">
+                            <h4><i class="fas fa-mobile-alt"></i> واجهة المستخدم</h4>
+                            <p>Jetpack Compose</p>
+                        </div>
+                        <div class="category">
+                            <h4><i class="fas fa-microchip"></i> مكتبات وأدوات</h4>
+                            <p>Android Studio, Text-to-Speech API, StartApp Ads</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم معرض الصور -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-left">معرض <span>الصور</span></h2>
+            
+            <div class="gallery-grid">
+                <!-- صورة 1 -->
+                <div class="gallery-item" data-aos="fade-up">
+                    <img src="assets/images/4.webp" alt="واجهة التطبيق الرئيسية">
+                    <div class="gallery-overlay">
+                        <h3>واجهة التطبيق الرئيسية</h3>
+                        <p>تصميم بسيط وواضح للآلة الحاسبة الناطقة</p>
+                    </div>
+                </div>
+                
+                <!-- صورة 2 -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/1.webp" alt="الوضع الداكن">
+                    <div class="gallery-overlay">
+                        <h3>الوضع الداكن</h3>
+                        <p>تغيير تلقائي حسب إعدادات الجهاز</p>
+                    </div>
+                </div>
+                
+                <!-- صورة 3 -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/2.webp" alt="زر تبديل الصوت">
+                    <div class="gallery-overlay">
+                        <h3>زر تبديل اللغة الصوتية</h3>
+                        <p>اختيار يدوي بين العربية والإنجليزية</p>
+                    </div>
+                </div>
+                
+                <!-- صورة 4 -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/images/3.webp" alt="مثال على نطق النتائج">
+                    <div class="gallery-overlay">
+                        <h3>مثال على نطق النتائج</h3>
+                        <p>التطبيق ينطق ناتج العمليات الحسابية فوراً</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم فيديو التطبيق -->
+    <section id="video" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-left">فيديو <span>التطبيق</span></h2>
+            <div class="video-wrapper" data-aos="fade-up">
+                <iframe width="100%" height="480" src="https://www.youtube.com/embed/RDtq8xNH_hM" title="فيديو شرح تطبيق الآلة الحاسبة الناطقة" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم تواصل معي -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-left">تواصل <span>معي</span></h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>هل لديك مشروع مماثل؟</h3>
+                    <p>إذا كنت مهتمًا بعمل مشروع مماثل أو لديك أي استفسار، فلا تتردد في التواصل معي عبر أي من الوسائل التالية:</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>البريد الإلكتروني</h4>
+                                <p><a href="mailto:ghassanabdulkhaliq92@gmail.com" style="color: red;"><strong>ghassanabdulkhaliq92@gmail.com</strong></a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>الهاتف</h4>
+                                <p><a href="tel:+9647755301667" style="color: red;"><strong>+964 775 530 1667</strong></a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>الموقع</h4>
+                                <p>بغداد، العراق</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://wa.me/9647755301667" target="_blank" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/ghassan_gak" target="_blank" class="social-link" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/YourGitHubUsername" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/YourLinkedInUsername" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="             اسمك الكامل" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="            بريدك الإلكتروني" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="           الموضوع">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="            رسالتك" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>غسان عبدالخالق</h3>
+                    <p>مطور ويب وتطبيقات محترف</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#overview">نظرة عامة</a></li>
+                        <li><a href="#features">المميزات</a></li>
+                        <li><a href="#technologies">التقنيات</a></li>
+                        <li><a href="#gallery">معرض الصور</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>معلومات التواصل</h4>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:ghassanabdulkhaliq92@gmail.com" style="color: red; font-weight: bold;">
+                          ghassanabdulkhaliq92@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+9647755301667" style="color: red; font-weight: bold;">
+                          009647755301667
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> جميع الحقوق محفوظة | تم التصميم والتطوير بواسطة <span>غسان عبدالخالق</span></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- زر العودة للأعلى -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- مكتبة AOS للانيميشن -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JS المخصص -->
+    <script src="js/main.js"></script>
+</body>
+</html>
